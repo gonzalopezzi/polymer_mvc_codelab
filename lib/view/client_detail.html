@@ -4,7 +4,7 @@
       :host {
       }
 
-      .main-container {
+      #main-container {
         padding: 16px;
       }
 
@@ -18,34 +18,36 @@
         text-align: center;
       }
 
-      .upselling-prob-value-green {
+      .upselling-prob-value {
         font-size: 48px;
         font-weight: bolder;
         font-family: Impact;
+      }
+
+      .green {
         color: green;
       }
 
-      .upselling-prob-value-red {
-        font-size: 48px;
-        font-weight: bolder;
-        font-family: Impact;
+      .red {
         color: red;
       }
 
     </style>
-    <div class="main-container">
+    <div id="main-container">
       <template is="dom-if" if="[[!clientData]]">
         Select a client
       </template>
       <template is="dom-if" if="[[clientData]]">
         <div class="upselling-prob-container">
-          <div class="upselling-prob-value-green">[[clientData.upsellingProb]]%</div>
+          <div class$="[[upsellingProbClasses]]">[[clientData.upsellingProb]]%</div>
           <div>Upselling Probability</div>
         </div>
         <div>
           <h1>Variables</h1>
+          <bar-chart-d3 variables="[[clientData.topVariables]]"></bar-chart-d3>
         </div>
       </template>
+      <paper-toast id="toast">Client loaded</paper-toast>
     </div>
   </template>
 </dom-module>
