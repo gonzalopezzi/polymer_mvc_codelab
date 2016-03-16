@@ -1,0 +1,30 @@
+<dom-module id="main-app">
+ <style>
+    :host {
+      display: block;
+      @apply(--layout-horizontal);
+    }
+
+    #clients-card {
+      padding: 0 20px 20px 20px;
+    }
+
+    #client-details {
+      padding: 0 20px 20px 20px;
+      margin-left: 20px;
+      @apply(--layout-flex);
+    }
+
+  </style>
+
+  <template>
+    <paper-card id="clients-card" heading="Clients">
+      <template is="dom-repeat" items="[[clientScoringPm.clients]]">
+        <client-row client-data="[[item]]" on-tap="clientTap"></client-row>
+      </template>
+    </paper-card>
+    <paper-card id="client-details" heading="[[clientScoringPm.clientDetails.client.name]] [[clientScoringPm.clientDetails.client.lastName]] Details">
+      <client-detail client-data="[[clientScoringPm.clientDetails]]"></client-detail>
+    </paper-card>
+  </template>
+</dom-module>

@@ -1,0 +1,51 @@
+<dom-module id="client-detail">
+  <template>
+    <style>
+      :host {
+      }
+
+      .main-container {
+        padding: 16px;
+      }
+
+      h1 {
+        font-size: 20px;
+        font-weight: 400;
+      }
+
+      .upselling-prob-container {
+        width: 120px;
+        text-align: center;
+      }
+
+      .upselling-prob-value-green {
+        font-size: 48px;
+        font-weight: bolder;
+        font-family: Impact;
+        color: green;
+      }
+
+      .upselling-prob-value-red {
+        font-size: 48px;
+        font-weight: bolder;
+        font-family: Impact;
+        color: red;
+      }
+
+    </style>
+    <div class="main-container">
+      <template is="dom-if" if="[[!clientData]]">
+        Select a client
+      </template>
+      <template is="dom-if" if="[[clientData]]">
+        <div class="upselling-prob-container">
+          <div class="upselling-prob-value-green">[[clientData.upsellingProb]]%</div>
+          <div>Upselling Probability</div>
+        </div>
+        <div>
+          <h1>Variables</h1>
+        </div>
+      </template>
+    </div>
+  </template>
+</dom-module>

@@ -1,0 +1,20 @@
+{
+  "client": {
+    "id": 3,
+    "name": "Matt",
+    "lastName": "Murdock",
+    "birthDate": "1960-01-01",
+    "image": "murdock.png"
+  },
+  "upsellingProb": 71.37,
+  "topVariables": [
+    {
+      "name": "Variable 1",
+      "value": 45.67
+    },
+    {
+      "name": "Variable 2",
+      "value": 62.42
+    }
+  ]
+}

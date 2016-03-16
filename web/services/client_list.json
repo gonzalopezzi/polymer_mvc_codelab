@@ -1,0 +1,51 @@
+[
+  {
+    "id": 1,
+    "name": "Peter",
+    "lastName": "Parker",
+    "birthDate": "1960-01-01",
+    "image": "parker.png"
+  },
+  {
+    "id": 2,
+    "name": "Wilson",
+    "lastName": "Fisk",
+    "birthDate": "1960-01-01",
+    "image": "fisk.png"
+  },
+  {
+    "id": 3,
+    "name": "Matt",
+    "lastName": "Murdock",
+    "birthDate": "1960-01-01",
+    "image": "murdock.png"
+  },
+  {
+    "id": 4,
+    "name": "Nick",
+    "lastName": "Fury",
+    "birthDate": "1960-01-01",
+    "image": "fury.png"
+  },
+  {
+    "id": 5,
+    "name": "Tony",
+    "lastName": "Stark",
+    "birthDate": "1960-01-01",
+    "image": "stark.png"
+  },
+  {
+    "id": 6,
+    "name": "Bruce",
+    "lastName": "Banner",
+    "birthDate": "1960-01-01",
+    "image": "banner.png"
+  },
+  {
+    "id": 7,
+    "name": "Pepper",
+    "lastName": "Potts",
+    "birthDate": "1960-01-01",
+    "image": "potts.png"
+  }
+]

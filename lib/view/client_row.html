@@ -1,0 +1,35 @@
+<dom-module id="client-row">
+  <template>
+    <style>
+      :host {
+        display:block;
+        @apply(--layout-horizontal);
+        @apply(--layout-center);
+        box-sizing: border-box;
+        border: solid #ccc;
+        border-width: 0 0 1px 0;
+        padding: 10px 0 10px 0;
+      }
+
+      :host:hover .full-name {
+        font-weight: bold;
+      }
+
+      iron-image {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+      }
+
+      .full-name {
+        padding-left: 20px;
+        width: 320px;
+      }
+
+    </style>
+    <iron-image sizing="cover" src="images/users/[[clientData.image]]"></iron-image>
+    <div class="full-name">
+      [[clientData.name]] [[clientData.lastName]]
+    </div>
+  </template>
+</dom-module>
